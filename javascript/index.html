@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="element1"> hello</div>
+
+    <button id="mybutton">clik hear</button>
+
+    <div id="con"></div>
+
+
+    <script>
+
+        const arr = [1, 2, 3, "hello CE Nextgen",true,false];
+        const li_arr =[];
+        
+
+        const container1 = document.getElementById("con");
+
+       const ul_el = document.createElement("ul");
+       container1.appendChild(ul_el);
+
+       for (const item of arr){
+        const li_el = document.createElement("li");
+        li_el.innerText = item;
+        ul_el.appendChild(li_el);
+        li_arr.push(li_el);
+       }
+
+
+       const mybutton =document.getElementById("mybutton");
+
+       let state = true;
+
+       mybutton.addEventListener("click", function() {
+        if (state == true){
+
+            ul_el.style.background = "pink";
+            state = false;
+        }else {
+            ul_el.style.background = "green";
+            state = true;
+        }
+       })
+
+       ul_el.addEventListener("mouseover" ,function() {
+        ul_el.style.background = "red";
+       })
+
+       ul_el.addEventListener("mouseout" ,function() {
+        ul_el.style.background = "blue";
+       })
+
+       ul_el.style.background = "green";
+
+        
+    </script>
+</body>
+</html>

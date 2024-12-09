@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="list"></div>
+    <button id="button">click here!</button>
+
+
+
+
+    <script>
+
+        const list = document.getElementById("list")
+
+        const button = document.getElementById("button");
+
+        const food =["กะเพรา","ก๋วยเตี่ยว"];
+        const ulfood = document.createElement("ul")
+
+        for (const item of food) {
+            const li_food = document.createElement("li")
+            li_food.innerText = item;
+            ul_food.appendChild(li)
+        }
+
+        let state = false;
+
+        button.addEventListener("click",function() {
+            if (state == false){
+                const name = document.createElement("h1");
+                name.innerText = "Arutcharin Na Pattalung";
+                list.appendChild(name)
+
+            
+            }
+            
+
+
+        })
+
+    </script>
+</body>
+</html>
