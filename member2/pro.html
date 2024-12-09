@@ -36,6 +36,18 @@
             font-size: 24px;
         }
 
+        .homebutton {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .homebutton:hover {
+            color: rgb(255, 165, 0);
+        }
+
         .nav-links {
             display: flex;
             gap: 30px;
@@ -161,14 +173,16 @@
 </head>
 <body>
     <header>
-        <a>Intouch</a>
+        <a class="homebutton" href="#home">Intouch</a>
         <nav class="nav-links">
             <a href="#ab">About Me</a>
             <a href="#ac">Activity</a>
             <a href="#ta">Talent</a>
+            <a href="E:\Bio\nextgen-html\index.html">Index</a>
         </nav>
     </header>
-    <div class="container">
+    <br id="home" class="container">
+        <br></br>
         <section class="about">
             <h1>Welcome to My Portfolio!</h1>
             <p>Let me introduce myself</p>
