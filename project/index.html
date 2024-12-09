@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgb(176, 95, 183), rgb(239, 255, 189));
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .profiles {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .profile-card {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card a {
+            text-decoration: none;
+            color: rgb(225, 173, 30);
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our World!</h1>
+        <div class="profiles">
+            
+            <div class="profile-card">
+                <img src="member1/me.jpg" alt="Profile 1">
+                <h2>Bio</h2>
+                <p>Arutcharin Na Pattalung</p>
+                <a href="member1/arutcharin.html">Visit Page</a>
+            </div>
+            
+            <div class="profile-card">
+                <img src="profile2.jpg" alt="Profile 2">
+                <h2>Game</h2>
+                <p>Intouch Wareekham</p>
+                <a href="chananut.html">Visit Page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
